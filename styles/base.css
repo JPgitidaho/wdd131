@@ -60,7 +60,7 @@ header{
 
 .nav a:hover,
 .nav a:focus-visible{
-  color: var(--color-text);          
+  color: var(--text);          
   border-bottom-color: var(--brand);
   transform: translateY(-1px);
 }
@@ -93,7 +93,7 @@ h1{
   background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
   border:1px solid rgba(255,255,255,.06);
   border-radius:1rem;
-  box-shadow:var(--shadow);
+  box-shadow:0 20px 60px rgba(2,6,23,.35), 0 1px 0 rgba(255,255,255,.03);
   padding:1.25rem;
 }
 
@@ -191,18 +191,7 @@ h1{
   );
   box-shadow:0 6px 18px rgba(122,162,255,.18);
 }
-.divider::before{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:-5px;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:var(--color-accent);
-  box-shadow:0 0 0 4px rgba(122,162,255,.15);
-  transform:translateX(-50%);
-}
+
 
 .andes{
   margin:.25rem  1rem;

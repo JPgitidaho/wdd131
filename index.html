@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 – Dynamic Web Fundamentals – Juanita Perez</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Juanita Perez. Professional landing page with local optimized images, grid layout, and dynamic footer.">
+    <meta name="author" content="Juanita Perez">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <hr class="divider">
+        <nav class="nav">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener">Scripture</a>
+            <a href="#" aria-disabled="true">Final Project</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Juanita Perez</h1>
+        <div class="grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <hr class="divider">
+                <div class="media">
+                    <img class="avatar" src="images/profile-180.webp" srcset="
+                            images/profile-120.webp 120w,
+                            images/profile-180.webp 180w,
+                            images/profile-240.webp 240w,
+                            images/profile-320.webp 320w" sizes="(max-width: 600px) 120px, 180px" width="180"
+                        height="180" alt="Photo of Juanita Perez" decoding="async" />
+                    <p> I design and build fast, accessible, and modern interfaces with a focus on clarity, performance,
+                        and maintainability. I enjoy shipping simple solutions to real problems and keeping codebases
+                        tidy and scalable.</p>
+                </div>
+
+                <hr class="divider">
+                <figure class="andes">
+                    <img src="images/mountain-rancagua-720.webp" srcset="
+                                images/mountain-rancagua-480.webp 480w,
+                                images/mountain-rancagua-720.webp 720w,
+                                images/mountain-rancagua-960.webp 960w,
+                                images/mountain-rancagua-1200.webp 1200w" sizes="(min-width: 980px) 66vw, 100vw"
+                        width="1200" height="675" alt="Mountain landscape near Rancagua, Chile" decoding="async"
+                        loading="lazy" />
+
+                    <figcaption>Colors and light from the Andes inspire my work every day.</figcaption>
+                </figure>
+            </section>
+
+            <aside class="card side">
+                <h2>Web Dev Resources</h2>
+                <hr class="divider">
+                <ul class="links">
+                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                    <li><a href="https://web.dev/learn/" target="_blank" rel="noopener">web.dev Learn</a></li>
+                    <li><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a></li>
+                    <li><a href="https://developer.chrome.com/docs/lighthouse/overview/" target="_blank"
+                            rel="noopener">Lighthouse</a></li>
+                    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+                            rel="noopener">CSS Grid Guide</a></li>
+                    <li><a href="https://flexboxfroggy.com/" target="_blank" rel="noopener">Flexbox Froggy</a></li>
+                </ul>
+            </aside>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Juanita Perez • Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

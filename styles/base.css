@@ -243,10 +243,21 @@ footer p{margin:.25rem 0}
 
 @media (max-width:980px){
   .grid{grid-template-columns:1fr}
-  .span-2{grid-column:auto}
+  
 }
 
-@media (max-width:640px){
-  .media{grid-template-columns:1fr;text-align:center}
-  .avatar{margin:0 auto}
+
+  @media (max-width: 640px){
+  .media{ display: block; }
+    .avatar{
+    display: block;
+    margin: 0 auto 1rem;     
+    width: 140px; 
+    height: 140px;
+  }
+  .media p{
+    margin: 0;
+    text-align: left;       
+  }
 }
+

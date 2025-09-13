@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 640px)" />
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-bar">
+            <h1 class="brand">Temple Album</h1>
+            <nav id="primary-nav" class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" data-filter="all" class="active">All Temples</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+            <button id="menu" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+
+    <main class="site-main">
+        <h2 id="viewTitle" class="page-title">Home</h2>
+        <section id="gallery" class="gallery"></section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

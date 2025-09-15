@@ -1,6 +1,4 @@
 const gallery = document.getElementById("gallery");
-const menuBtn = document.getElementById("menu");
-const nav = document.getElementById("primary-nav");
 const links = [...document.querySelectorAll(".nav a")];
 const yearSpan = document.getElementById("year");
 const modSpan = document.getElementById("lastModified");
@@ -37,6 +35,7 @@ function render() {
   list.forEach((t) => {
     const fig = document.createElement("figure");
     fig.className = "figure";
+
     const media = document.createElement("div");
     media.className = "figure-media";
     const img = document.createElement("img");
@@ -45,6 +44,7 @@ function render() {
     img.loading = "lazy";
     img.decoding = "async";
     media.appendChild(img);
+
     const cap = document.createElement("figcaption");
     cap.className = "figure-cap";
     const h2 = document.createElement("h2");
@@ -55,32 +55,17 @@ function render() {
     ded.textContent = `Dedicated: ${t.dedicated}`;
     const ar = document.createElement("p");
     ar.textContent = `Area: ${t.area} sq ft`;
+
     cap.append(h2, loc, ded, ar);
     fig.append(media, cap);
     gallery.appendChild(fig);
   });
+
   viewTitle.textContent =
-    currentFilter === "all" ? "Home" : currentFilter.charAt(0).toUpperCase() + currentFilter.slice(1);
+    currentFilter === "all"
+      ? "Home"
+      : currentFilter.charAt(0).toUpperCase() + currentFilter.slice(1);
 }
-
-function updateMenuIcon() {
-  const open = nav.classList.contains("open");
-  menuBtn.textContent = open ? "✕" : "☰";
-  menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-  menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
-}
-
-menuBtn.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  updateMenuIcon();
-});
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && nav.classList.contains("open")) {
-    nav.classList.remove("open");
-    updateMenuIcon();
-  }
-});
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -89,8 +74,6 @@ links.forEach((link) => {
     links.forEach((l) => l.classList.remove("active"));
     link.classList.add("active");
     render();
-    nav.classList.remove("open");
-    updateMenuIcon();
   });
 });
 
@@ -105,9 +88,6 @@ async function load() {
   }
   render();
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  load();
-  yearSpan.textContent = new Date().getFullYear();
-  modSpan.textContent = document.lastModified;
-});
+load();
+yearSpan.textContent = new Date().getFullYear();
+modSpan.textContent = document.lastModified;

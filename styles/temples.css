@@ -182,3 +182,21 @@ img {
         scroll-behavior: auto !important
     }
 }
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem
+  }
+}
+@media screen and (max-width: 639px) {
+  .figure-media {
+    aspect-ratio: 16/9;
+  }
+}

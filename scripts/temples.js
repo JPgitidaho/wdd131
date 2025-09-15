@@ -1,4 +1,4 @@
-const gallery = document.getElementById("gallery");
+const gallery = document.getElementById("dynamic-gallery");
 const links = [...document.querySelectorAll(".nav a")];
 const yearSpan = document.getElementById("year");
 const modSpan = document.getElementById("lastModified");
@@ -88,6 +88,7 @@ async function load() {
   }
   render();
 }
+
 load();
 yearSpan.textContent = new Date().getFullYear();
 modSpan.textContent = document.lastModified;

@@ -1,4 +1,6 @@
-const gallery = document.getElementById("dynamic-gallery");
+const dynamicGallery = document.getElementById("dynamic-gallery");
+const staticContainer = document.getElementById("static-gallery");
+const staticFigures = Array.from(document.querySelectorAll("#static-gallery .figure, #gallery > .figure"));
 const links = [...document.querySelectorAll(".nav a")];
 const yearSpan = document.getElementById("year");
 const modSpan = document.getElementById("lastModified");
@@ -29,42 +31,44 @@ function filterList() {
   });
 }
 
+function showStatic(show) {
+  if (staticContainer) staticContainer.hidden = !show;
+  staticFigures.forEach((el) => (el.hidden = !show));
+}
+
 function render() {
   const list = filterList();
-  gallery.innerHTML = "";
-  list.forEach((t) => {
-    const fig = document.createElement("figure");
-    fig.className = "figure";
-
-    const media = document.createElement("div");
-    media.className = "figure-media";
-    const img = document.createElement("img");
-    img.src = t.imageUrl;
-    img.alt = t.templeName;
-    img.loading = "lazy";
-    img.decoding = "async";
-    media.appendChild(img);
-
-    const cap = document.createElement("figcaption");
-    cap.className = "figure-cap";
-    const h2 = document.createElement("h2");
-    h2.textContent = t.templeName;
-    const loc = document.createElement("p");
-    loc.textContent = t.location;
-    const ded = document.createElement("p");
-    ded.textContent = `Dedicated: ${t.dedicated}`;
-    const ar = document.createElement("p");
-    ar.textContent = `Area: ${t.area} sq ft`;
-
-    cap.append(h2, loc, ded, ar);
-    fig.append(media, cap);
-    gallery.appendChild(fig);
-  });
-
-  viewTitle.textContent =
-    currentFilter === "all"
-      ? "Home"
-      : currentFilter.charAt(0).toUpperCase() + currentFilter.slice(1);
+  const showAll = currentFilter === "all";
+  showStatic(showAll);
+  dynamicGallery.innerHTML = "";
+  if (!showAll) {
+    list.forEach((t) => {
+      const fig = document.createElement("figure");
+      fig.className = "figure";
+      const media = document.createElement("div");
+      media.className = "figure-media";
+      const img = document.createElement("img");
+      img.src = t.imageUrl;
+      img.alt = t.templeName;
+      img.loading = "lazy";
+      img.decoding = "async";
+      media.appendChild(img);
+      const cap = document.createElement("figcaption");
+      cap.className = "figure-cap";
+      const h2 = document.createElement("h2");
+      h2.textContent = t.templeName;
+      const loc = document.createElement("p");
+      loc.textContent = t.location;
+      const ded = document.createElement("p");
+      ded.textContent = `Dedicated: ${t.dedicated}`;
+      const ar = document.createElement("p");
+      ar.textContent = `Area: ${t.area} sq ft`;
+      cap.append(h2, loc, ded, ar);
+      fig.append(media, cap);
+      dynamicGallery.appendChild(fig);
+    });
+  }
+  viewTitle.textContent = showAll ? "Home" : currentFilter.charAt(0).toUpperCase() + currentFilter.slice(1);
 }
 
 links.forEach((link) => {
@@ -82,13 +86,12 @@ async function load() {
     const res = await fetch("data/templeList.json");
     if (!res.ok) throw new Error("no json");
     data = await res.json();
-  } catch (e) {
-    console.error("Error loading templeList.json", e);
+  } catch {
     data = [];
   }
   render();
 }
 
 load();
-yearSpan.textContent = new Date().getFullYear();
-modSpan.textContent = document.lastModified;
+if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+if (modSpan) modSpan.textContent = document.lastModified;

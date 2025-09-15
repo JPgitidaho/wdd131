@@ -55,15 +55,15 @@ function render() {
       media.appendChild(img);
       const cap = document.createElement("figcaption");
       cap.className = "figure-cap";
-      const h2 = document.createElement("h2");
-      h2.textContent = t.templeName;
+      const h3 = document.createElement("h3");
+      h3.textContent = t.templeName;
       const loc = document.createElement("p");
       loc.textContent = t.location;
       const ded = document.createElement("p");
       ded.textContent = `Dedicated: ${t.dedicated}`;
       const ar = document.createElement("p");
       ar.textContent = `Area: ${t.area} sq ft`;
-      cap.append(h2, loc, ded, ar);
+      cap.append(h3, loc, ded, ar);
       fig.append(media, cap);
       dynamicGallery.appendChild(fig);
     });

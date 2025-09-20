@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chile - Country Information</title>
+
+    <meta name="description"
+        content="Discover Chile, a beautiful country in South America with diverse landscapes, culture, and history.">
+    <meta name="author" content="Juanita Perez">
+    <meta name="keywords" content="Chile, South America, Santiago, Torres del Paine, Andes, Patagonia, Tourism">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Outfit:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>Chile</h1>
+        <button id="menu" aria-label="Open menu">☰</button>
+        <nav id="primary-nav" class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Geography</a></li>
+                <li><a href="#">Tourism</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 900px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+                <img src="images/hero-small.webp" alt="Landscape of Chile with mountains and lakes">
+            </picture>
+            <div class="hero-text">
+                <h2>Discover Chile</h2>
+            </div>
+        </section>
+
+        <section class="hero-cards">
+            <article class="card">
+                <h3>Information</h3>
+                <p>Capital: Santiago</p>
+                <p>Population: 19 million</p>
+                <p>Language: Spanish</p>
+            </article>
+            <article class="card">
+                <h3>Weather</h3>
+                <p>Temperature: 10°C</p>
+                <p>Wind: 5 km/h</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </article>
+        </section>
+
+        <section class="info">
+            <h2>General Information</h2>
+            <p>Chile is a country located in the southwestern part of South America. It is famous for its diverse
+                geography, including the Atacama Desert, fertile valleys, the Andes mountains, and an extensive Pacific
+                coastline.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Chile | Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</body>
+
+</html>

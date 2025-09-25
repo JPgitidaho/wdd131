@@ -177,15 +177,13 @@ h2 {
   text-align: center;
   max-width: 62rem;
   margin-inline: auto;
+  margin-top: 1rem;
   padding: 1.25rem 1rem;
   color: var(--muted);
-  border-top: 1px solid rgba(255, 255, 255, .08)
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  background: #070b18;
 }
-#year,
-#lastModified {
-  color: #ffffff;
-  font-weight: 600;
-}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: .001ms !important;

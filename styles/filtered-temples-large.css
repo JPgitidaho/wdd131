@@ -1,0 +1,59 @@
+@media screen and (min-width: 1024px) {
+  .site-main {
+    max-width: 90rem;
+    margin-inline: auto;
+    padding: 2rem;
+  }
+
+  .nav {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .temple-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 3.5rem;
+  }
+
+  .brand {
+    margin-right: 1rem;
+  }
+
+  #temple-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .temple-card {
+    max-width: none;
+    text-align: left;
+    padding: 1.5rem;
+  }
+
+  .temple-card img {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #temple-cards {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1600px;
+  }
+}

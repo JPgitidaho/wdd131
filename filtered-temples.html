@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Temple Album showcasing photos, details and history of temples around the world.">
+    <meta name="author" content="Juanita Perez">
+    <title>Temple Album | Picture Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+
+</head>
+
+
+<body>
+    <header class="site-header">
+        <div class="header-bar">
+            <h1 class="brand">Temple Album</h1>
+            <nav id="primary-nav" class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" id="home">All</a></li>
+                    <li><a href="#" id="old">Old</a></li>
+                    <li><a href="#" id="new">New</a></li>
+                    <li><a href="#" id="large">Large</a></li>
+                    <li><a href="#" id="small">Small</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+
+    <main id="temple-cards"></main>
+    <script src="scripts/menu.js" defer></script>
+    <script type="module" src="scripts/filtered-temples.js"></script>
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

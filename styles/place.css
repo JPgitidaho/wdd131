@@ -33,13 +33,13 @@ header {
 }
 
 header h1 {
-    background: linear-gradient(90deg, #0033A0, #FFFFFF, #D52B1E); 
+  background: linear-gradient(90deg, #0033A0, #FFFFFF, #D52B1E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 2px 2px 6px rgba(99, 98, 98, 0.507);
   font-size: 3rem;
-  margin:0 50px;
+  margin: 0 50px;
 }
 
 #menu {
@@ -108,15 +108,14 @@ header h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-   font-size: 4rem;
+  font-size: 4rem;
   font-weight: 700;
-  background: var(--bg-color); 
+  background: var(--bg-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 2px 2px 6px rgba(121, 119, 119, 0.7);
   z-index: 2;
- 
 }
 
 .hero-cards {
@@ -135,10 +134,11 @@ header h1 {
   box-shadow: 0 4px 10px rgba(236, 8, 8, 0.2);
   width: 90%;
 }
+
 .card p, h3 {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   line-height: 1.6;
-  color:var(--bg-color); 
+  color: var(--bg-color);
 }
 
 .info {
@@ -157,6 +157,14 @@ header h1 {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.5rem;
+}
+
+/* Control for mobile/desktop icons */
+.mobile-icon {
+  display: inline-block;
+}
+.desktop-icon {
+  display: none;
 }
 
 footer {
@@ -205,5 +213,15 @@ footer {
     width: auto;
     min-width: 200px;
     gap: 3rem;
+  }
+
+  /* On desktop hide SVG and show text */
+  .mobile-icon {
+    display: none;
+  }
+  .desktop-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
   }
 }

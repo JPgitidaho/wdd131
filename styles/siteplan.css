@@ -1,0 +1,203 @@
+:root {
+  --bg: #ffffff;
+  --card: #f7f9fc;
+  --text: #1a1a1a;
+  --brand: #001f61;    
+  --accent: #0284c7;    
+  --danger: #830c0c;   
+}
+
+body.dark {
+  --bg: #0a0f1f;
+  --card: #141a2a;
+  --text: #e6eaf2;      
+  --brand: #60a5fa;    
+  --accent: #38bdf8;
+
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header {
+  background: var(--card);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #2a2a36;
+}
+.header h1 {
+  color: var(--brand);
+  margin: 0 0 0.5rem;
+}
+header, h1, h2, p {
+  color: var(--brand);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid #2a2a36;
+  transition: background 0.3s, color 0.3s;
+}
+.card h2 {
+  color: var(--brand);
+  margin-top: 0;
+}
+.card.wide {
+  grid-column: 1 / -1;
+}
+
+.btn-toggle {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #001f61;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-toggle:hover {
+  background: #1d4ed8;
+}
+
+.mode {
+  margin-bottom: 2rem;
+}
+.mode h3 {
+  color: var(--brand);
+  margin-bottom: 0.5rem;
+}
+
+.color-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+.color-list li {
+  margin: 0.3rem 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid #2a2a36;
+}
+
+.swatches {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.swatches div {
+  flex: 1;
+  min-width: 90px;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #2a2a36;
+}
+
+.wireframes {
+  display: grid;
+  gap: 1rem;
+}
+.wireframes figure {
+  margin: 0;
+  text-align: center;
+}
+.wireframes img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--brand);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  padding: 0.5rem;
+}
+
+.footer {
+  background: var(--card);
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #2a2a36;
+}
+
+/* ========================
+   Hero Gradient Demo
+   ======================== */
+.hero {
+  background: linear-gradient(135deg, #1e1e2f, #3b0ca3, #0f172a);
+  color:#e6eaf2;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.hero h1 {
+  font-size: 2rem;
+  
+}
+.hero h1, .hero p {
+  margin: 0.5rem 0;
+  color:#e6eaf2 ;
+}
+.trust {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.stars {
+  color: #22c55e;
+  margin-right: 0.5rem;
+}
+.text-gradient {
+  background: linear-gradient(90deg, #22c55e, #9333ea, #f72585);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.coin {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: gold;
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+  opacity: 0.8;
+}
+.coin:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.coin:nth-child(2) { top: 50%; left: 80%; animation-delay: 2s; }
+.coin:nth-child(3) { top: 70%; left: 30%; animation-delay: 4s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+}

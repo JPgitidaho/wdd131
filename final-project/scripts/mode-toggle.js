@@ -26,3 +26,13 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.setAttribute("aria-pressed", "false");
   }
 });
+const menuBtn = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", isOpen);
+    menuBtn.textContent = isOpen ? "✖" : "☰";
+  });
+}

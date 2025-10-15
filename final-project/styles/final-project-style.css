@@ -529,6 +529,47 @@ body.dark .hero-gradient {
     margin: 15px;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    width: 200px;
+    z-index: 100;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a, .nav button {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
 @media (min-width:768px) {
     .catalog .controls-inner {
         grid-template-columns: 1fr 200px 200px

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevMarket — Home</title>
+    <meta name="description" content="Simple Demo Store con hero, product grid y carrito con localStorage.">
+    <link rel="stylesheet" href="styles/final-project-style.css">
+</head>
+
+<body class="theme site" data-page="home">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index-final-project.html">DevMarket</a>
+            <nav class="nav" aria-label="Principal">
+                <button class="btn ghost" id="mode-toggle" aria-pressed="false" aria-label="change theme">☀️</button>
+                <a class="active" href="index-final-project.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html" id="cart-link">Cart <span class="badge" id="cart-count">0</span></a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="hero-gradient">
+            <div class="coin"></div>
+            <div class="coin"></div>
+            <div class="coin"></div>
+
+            <h1>DevMarket</h1>
+            <p>Digital products for developers and designers</p>
+            <div class="trust">
+                <span class="stars">★★★★★</span>
+                <span>Trusted by over 10k professionals</span>
+            </div>
+            <p class="text-gradient">4.8 Rating</p>
+            <a href="products.html" class="btn primary">Shop Now</a>
+        </section>
+        <section id="top-products" class="products">
+            <div class="container">
+                <h2 class="section-title">🔥 Top Products</h2>
+                <div id="home-grid" class="grid"></div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container about-inner">
+                <h2 class="section-title">Why Choose DevMarket?</h2>
+                <p>
+                    We curate the best digital assets for web developers, designers, and creators.
+                    From templates to icons, you’ll find everything you need to build faster and smarter.
+                </p>
+                <ul class="benefits">
+                    <li>🚀 Ready-to-use templates and UI kits</li>
+                    <li>🎨 High-quality design resources</li>
+                    <li>💼 Trusted by professionals worldwide</li>
+                </ul>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container cta-inner">
+                <h2>Need a Custom Solution?</h2>
+                <p>Contact us to get tailored digital tools for your next project.</p>
+                <a href="contact.html" class="btn primary">Contact Us</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 DevMarket — <a href="references.html">References</a></p>
+
+        </div>
+    </footer>
+
+    <script src="scripts/mode-toggle.js" type="module"></script>
+    <script type="module" src="scripts/app.js"></script>
+
+</body>
+
+</html>

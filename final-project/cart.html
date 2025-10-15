@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | DevMarket</title>
+    <link rel="stylesheet" href="styles/final-project-style.css">
+</head>
+
+<body data-page="cart" class="theme site">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index-final-project.html" class="brand">DevMarket</a>
+            <nav class="nav">
+                <button class="btn ghost" id="mode-toggle" aria-pressed="false" aria-label="change theme">☀️</button>
+                <a href="index-final-project.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page container">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <a href="contact.html" class="btn primary">Checkout</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 DevMarket — <a href="references.html">References</a></p>
+        </div>
+    </footer>
+    <script src="scripts/mode-toggle.js" type="module"></script>
+    <script type="module" src="scripts/app.js"></script>
+
+</body>
+
+</html>

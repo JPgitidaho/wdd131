@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevMarket — Products</title>
+    <meta name="description" content="Catálogo completo con búsqueda y filtros usando Fake Store API.">
+    <link rel="stylesheet" href="styles/final-project-style.css">
+</head>
+
+<body class="theme site" data-page="products">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index-final-project.html">DevMarket</a>
+            <nav class="nav" aria-label="Principal">
+                <button class="btn ghost" id="mode-toggle" aria-pressed="false" aria-label="change theme">☀️</button>
+                <a class="active" href="index-final-project.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html" id="cart-link">Cart <span class="badge" id="cart-count">0</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="catalog">
+        <div class="catalog-controls">
+            <div class="container controls-inner">
+                <input id="q" class="input" type="search" placeholder="Search products..." aria-label="Search products">
+                <select id="category" class="select" aria-label="Filter by category">
+                    <option value="">All categories</option>
+                </select>
+                <select id="sort" class="select" aria-label="Sort products">
+                    <option value="">Sort</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="title-asc">Title: A–Z</option>
+                    <option value="title-desc">Title: Z–A</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="products">
+            <div class="container">
+                <h1 class="section-title">All Products</h1>
+                <div id="products-grid" class="grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 DevMarket — <a href="references.html">References</a></p>
+
+        </div>
+    </footer>
+
+    <script src="scripts/mode-toggle.js" type="module"></script>
+    <script type="module" src="scripts/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevMarket — Contact</title>
+    <meta name="description" content="Formulario de contacto con validación accesible.">
+    <link rel="stylesheet" href="styles/final-project-style.css">
+</head>
+
+<body class="theme site" data-page="contact">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index-final-project.html">DevMarket</a>
+            <nav class="nav" aria-label="Principal">
+                <button class="btn ghost" id="mode-toggle" aria-pressed="false" aria-label="change theme">☀️</button>
+                <a href="index-final-project.html">Home</a>
+                <a href="products.html">Products</a>
+                <a class="active" href="contact.html">Contact</a>
+                <a href="cart.html" id="cart-link">Cart <span class="badge" id="cart-count">0</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="contact">
+        <section class="form-wrap">
+            <div class="container">
+                <h1 class="section-title">Get in touch</h1>
+                <form id="contact-form" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" class="input" type="text" required minlength="2" maxlength="60"
+                            autocomplete="name" placeholder="Your name">
+                        <p class="error" data-for="name"></p>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" class="input" type="email" required autocomplete="email"
+                            placeholder="you@email.com">
+                        <p class="error" data-for="email"></p>
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" class="input" type="text" required minlength="3"
+                            maxlength="80" placeholder="Subject">
+                        <p class="error" data-for="subject"></p>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="textarea" rows="6" required minlength="10"
+                            maxlength="1000" placeholder="Tell us more"></textarea>
+                        <p class="error" data-for="message"></p>
+                    </div>
+                    <div class="actions">
+                        <button class="btn primary" type="submit">Send Message</button>
+                        <button class="btn ghost" type="reset">Reset</button>
+                    </div>
+                    <p id="form-status" role="status" aria-live="polite" class="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 DevMarket — <a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/mode-toggle.js" type="module"></script>
+    <script type="module" src="scripts/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "title": "UI Kit Pro Pack",
+    "price": 29,
+    "description": "Complete collection of UI components for modern web apps.",
+    "category": "UI Design",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+  },
+  {
+    "id": 2,
+    "title": "Icon Pack 400+",
+    "price": 19,
+    "description": "400 scalable icons in outline and filled styles for apps and websites.",
+    "category": "Design Assets",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg"
+  },
+  {
+    "id": 3,
+    "title": "Landing Page Templates",
+    "price": 24,
+    "description": "Responsive landing page templates optimized for conversions.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    "id": 4,
+    "title": "Dashboard Admin Starter",
+    "price": 34,
+    "description": "Modern admin dashboard template for analytics and management apps.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    "id": 5,
+    "title": "Portfolio Themes Bundle",
+    "price": 22,
+    "description": "Clean and minimal portfolio templates for developers and creatives.",
+    "category": "Themes",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+  },
+  {
+    "id": 6,
+    "title": "Illustrations Set Vol. 1",
+    "price": 18,
+    "description": "High-quality vector illustrations for websites and dashboards.",
+    "category": "Graphics",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg"
+  },
+  {
+    "id": 7,
+    "title": "Developer Tools Bundle",
+    "price": 49,
+    "description": "A curated pack of developer utilities, snippets, and code templates.",
+    "category": "Development",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "id": 8,
+    "title": "Mobile UI Components",
+    "price": 27,
+    "description": "Ready-to-use mobile screens for iOS and Android apps.",
+    "category": "UI Design",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+  },
+  {
+    "id": 9,
+    "title": "React Dashboard Template",
+    "price": 39,
+    "description": "Admin panel template built with React and Tailwind CSS.",
+    "category": "Development",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "id": 10,
+    "title": "E-commerce UI Kit",
+    "price": 25,
+    "description": "Complete UI kit for creating beautiful online stores.",
+    "category": "UI Design",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+  },
+  {
+    "id": 11,
+    "title": "Typography Pack",
+    "price": 15,
+    "description": "Modern font combinations for UI and web projects.",
+    "category": "Design Assets",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+  },
+  {
+    "id": 12,
+    "title": "Web Animations Pack",
+    "price": 20,
+    "description": "CSS and Lottie animation assets for interactive designs.",
+    "category": "Animation",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+  },
+  {
+    "id": 13,
+    "title": "Vector Backgrounds",
+    "price": 17,
+    "description": "Abstract and gradient vector backgrounds for web and apps.",
+    "category": "Graphics",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg"
+  },
+  {
+    "id": 14,
+    "title": "Bootstrap Admin Kit",
+    "price": 28,
+    "description": "Admin template using Bootstrap 5 and modern UI components.",
+    "category": "Development",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+  },
+  {
+    "id": 15,
+    "title": "Next.js SaaS Template",
+    "price": 42,
+    "description": "Full-featured SaaS landing page built with Next.js and Tailwind.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    "id": 16,
+    "title": "Vue.js Components Kit",
+    "price": 31,
+    "description": "Collection of reusable Vue components for dashboards.",
+    "category": "Development",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+  },
+  {
+    "id": 17,
+    "title": "Dark Theme UI Kit",
+    "price": 26,
+    "description": "Elegant dark-mode interface kit for web dashboards.",
+    "category": "UI Design",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+  },
+  {
+    "id": 18,
+    "title": "Startup Landing Pack",
+    "price": 35,
+    "description": "Landing templates for startups, SaaS, and tech companies.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    "id": 19,
+    "title": "Wireframe Kit",
+    "price": 21,
+    "description": "Low-fidelity wireframe templates for UX design.",
+    "category": "UI Design",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+  },
+  {
+    "id": 20,
+    "title": "React Native Starter",
+    "price": 38,
+    "description": "Cross-platform mobile app starter with React Native.",
+    "category": "Development",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "id": 21,
+    "title": "Gradient Background Pack",
+    "price": 12,
+    "description": "Collection of gradient backgrounds for web and UI projects.",
+    "category": "Graphics",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg"
+  },
+  {
+    "id": 22,
+    "title": "Design System Starter",
+    "price": 45,
+    "description": "Complete Figma design system for professional teams.",
+    "category": "UI Design",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+  },
+  {
+    "id": 23,
+    "title": "Markdown Docs Template",
+    "price": 14,
+    "description": "Responsive documentation site built with markdown support.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
+  },
+  {
+    "id": 24,
+    "title": "Web Icons SVG Set",
+    "price": 16,
+    "description": "Library of 500 SVG icons for web and mobile applications.",
+    "category": "Design Assets",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg"
+  },
+  {
+    "id": 25,
+    "title": "Light & Dark Dashboard Pack",
+    "price": 37,
+    "description": "UI dashboard layouts for both light and dark themes.",
+    "category": "UI Design",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+  },
+  {
+    "id": 26,
+    "title": "Dev Portfolio Starter",
+    "price": 28,
+    "description": "HTML/CSS portfolio template for web developers.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    "id": 27,
+    "title": "SaaS UI Template",
+    "price": 33,
+    "description": "Flexible UI template tailored for SaaS web apps.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "id": 28,
+    "title": "Email Template Set",
+    "price": 17,
+    "description": "Responsive email templates compatible with major clients.",
+    "category": "Templates",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    "id": 29,
+    "title": "Tech Illustrations Vol. 2",
+    "price": 20,
+    "description": "Modern 3D and flat tech illustrations for app landing pages.",
+    "category": "Graphics",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg"
+  },
+  {
+    "id": 30,
+    "title": "Web Developer Starter Pack",
+    "price": 50,
+    "description": "Essential digital assets for web developers to start quickly.",
+    "category": "Development",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+  }
+]

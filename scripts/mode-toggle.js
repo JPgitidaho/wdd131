@@ -1,7 +1,5 @@
-
 const toggleBtn = document.getElementById("mode-toggle");
 const body = document.body;
-
 
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
@@ -20,4 +18,3 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "☀️ Light Mode";
   }
 });
-

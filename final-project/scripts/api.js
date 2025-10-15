@@ -1,5 +1,6 @@
 
-export const API_URL = "/data/products.json";
+export const API_URL = "./scripts/data/products.json";
+
 
 export async function fetchJSON(url) {
   const res = await fetch(url);

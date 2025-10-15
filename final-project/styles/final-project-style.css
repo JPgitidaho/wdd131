@@ -489,26 +489,34 @@ body.dark .hero-gradient {
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    align-items: center;
+    gap: 2rem; 
 }
-
 .cart-page h1 {
     text-align: center;
 }
-
 #cart-items {
     display: grid;
+    width: 300px;
     gap: 1rem;
     margin: 0 auto;
-
+}
+.cart-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 .cart-item {
+    width: 100%;
     text-align: left;
     background: var(--card);
     color: var(--text);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 10px 12px
+    padding: 30px 20px
 }
 .cart-summary {
     max-width: 700px;

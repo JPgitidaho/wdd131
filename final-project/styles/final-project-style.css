@@ -349,6 +349,7 @@ body.dark .hero-gradient {
     list-style: none;
     display: grid;
     gap: .5rem;
+    
 }
 
 .benefits li {
@@ -567,6 +568,9 @@ body.dark .hero-gradient {
     width: 100%;
     text-align: left;
   }
+      .benefits li{
+        margin-right: 25px;
+    }
 }
 
 
@@ -591,6 +595,7 @@ body.dark .hero-gradient {
     .grid {
         grid-template-columns: repeat(2, 1fr)
     }
+
 }
 
 @media (min-width:940px) {

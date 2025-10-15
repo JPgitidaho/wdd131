@@ -130,8 +130,8 @@ textarea:focus-visible {
 }
 
 .badge {
-    background: var(--secondary);
-    color: #1a1a1a;
+    background:#001f61;
+    color: #f1f5fb;
     font-size: 12px;
     padding: 2px 6px;
     border-radius: 999px;

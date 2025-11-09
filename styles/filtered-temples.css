@@ -198,7 +198,6 @@ h2 {
   }
 }
 
-/* Medianas: 2 columnas */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #temple-cards {
     grid-template-columns: repeat(2, 1fr);

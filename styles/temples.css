@@ -1,6 +1,6 @@
 :root {
-  --bg: #5d81f8;
-  --card: #111834;
+  --bg: #174cfc;
+  --card: #0e2581;
   --ink: #e9ecf1;
   --muted: #f9fafc;
   --accent: #e5ff89;
@@ -104,21 +104,16 @@ img {
   background: var(--accent);
   color: #070b18
 }
-h2 {
+h2,#view-Title {
+  
     text-align: center;
 }
 .site-main {
+  background: var(--bg);
+  color: white;
   max-width: 90rem;
   margin-inline: auto;
   padding: 1rem 2rem
-}
-
-.page-title {
-  margin: 1rem 0 2rem 0;
-  padding: 0 1rem;
-  text-align: center;
-  font-family: var(--serif);
-  font-weight: 600
 }
 
 .gallery {
